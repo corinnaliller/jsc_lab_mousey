@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/* Corinna Liller, BBM2H17M */
+
+div {
+	display: flex;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+}
+.game-container {
+	width: 960px;
+	/*background-color: green;*/
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	align-content: center;
+}
+.canvas-container {
+	/*background-color: aqua;*/
+	align-self: center;
+}
+.tables {
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	text-align: center;
+	width: 100%;
+	/*background-color: dimgray;*/
+}
+.text {
+	align-self: center;
+	text-align: center;
+	
+}
+.scores {
+	align-self: center;
+	/*background-color: deepskyblue;*/
+	
+}
+.scores table {
+	text-align: center;
+	width: 250px;
+}
+.rules {
+	/*background-color: coral;*/
+	margin-left: 100px;
+}
+.restart {
+	align-self: center;
+}
+#score, #level {
+	width: 150px;
+}
+#ruleButton {
+	height: 25px;
+	align-self: center;
+	margin-left: 50px;
+}
+
+#icon_authors {
+	align-self: center;
+	margin-bottom: 10px;
+}

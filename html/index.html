@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- Corinna Liller, BBM2H17M -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Little Lab Mouse</title>
+<script src="../js/mousegame_obj.js"></script>
+<link rel="stylesheet" href="../css/layout.css">
+</head>
+
+<body>
+<div class="game-container">
+  <div class="canvas-container">
+    <canvas id="game" width="800" height="500" style="border: 1px solid #dddddd"> Your browser is too stupid for this game. Get a better one. </canvas>
+  </div>
+  <div class="text">
+    <p>Move the little mouse with the arrow keys on your keyboard.</p>
+    <input type="button" id="ruleButton" value="Show rules" onClick="showRules()">
+  </div>
+  <div class="tables">
+    <div class="scores">
+      <table>
+        <tr>
+          <td>Level</td>
+          <td id="level"></td>
+        </tr>
+        <tr>
+          <td>Score</td>
+          <td id="score"></td>
+        </tr>
+        <tr>
+          <td>Speed</td>
+          <td id="speed"></td>
+        </tr>
+        <tr>
+          <td>Cheeses left</td>
+          <td id="cleft"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="rule-container" style="display: none">
+      <table class="rules">
+        
+          <th> 
+          <td style="font-weight: bold; text-decoration: underline" colspan="3">Rules</td>
+            </th>
+        <tr>
+          <td><img src="../images/laboratory-mouse.png"></td>
+          <td>Mouse</td>
+          <td>This is you.</td>
+        </tr>
+        <tr>
+          <td><img src="../images/bacteria.png"></td>
+          <td>Bacteria</td>
+          <td>Do not touch. If it touches cheese, it will contaminate it.</td>
+        </tr>
+        <tr>
+          <td><img src="../images/cheese.png"></td>
+          <td>Cheese</td>
+          <td>Collect to win the level.(10 Points)</td>
+        </tr>
+        <tr>
+          <td><img src="../images/cheese_green.png"></td>
+          <td>contaminated Cheese</td>
+          <td>If you eat the contaminated cheese, you will get sick. (5 Points)</td>
+        </tr>
+        <tr>
+          <td><img src="../images/lab-flask.png"></td>
+          <td>Cure</td>
+          <td>Collect this if you are sick to heal yourself.Otherwise it has no benefit.</td>
+        </tr>
+        <tr>
+          <td><img src="../images/taco.png"></td>
+          <td>Taco</td>
+          <td>This makes you faster.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="restart">
+    <input type="button" style="display: none" id="newGame" value="New Game" onClick="newGame()">
+  </div>
+  <div id="icon_authors">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>
+</body>
+</html>
